@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: orange;
+    color: white;
+    padding-left: 10px;
+    position: fixed;
+    top: 0px;
+}
+.wrap1{
+    width: 30%;
+}
+.wrap2{
+    width: 50%;
+}
+.wrap3{
+    width: 10%;
+}
+
+.daohang{
+    color: grey;
+    width: 100%;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    background: ghostwhite;
+    padding-left: 10px;
+    border-bottom: 1px solid gainsboro;
+    font-size: .8rem;
+}
+.fa-volume-up{
+    color: orange;
+}
+.concat{
+    line-height: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    padding-left: 40px;
+    border-bottom: 1px solid gainsboro;
+}
+.concat>li:nth-child(1){
+    width:25%;
+    font-size: 1.6rem;
+}
+.concat>li:nth-child(2){
+    width: 60%;
+    text-align: right;
+    color: gainsboro;
+    font-size: 1.4rem;
+}
+.Dibu{
+    width: 100%;
+    height: 5rem;
+    line-height: 5rem;
+    padding-left: .5rem;
+}
+.Dibu>span:nth-child(3){
+    color: orange;
+}
+.tongyi{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 4rem;
+    color: whitesmoke;
+    background: orange;
+    height: 4rem;
+    border-radius:3.5%;
+    font-size: 1.6rem;
+}
+footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    background-color: #fff;
+    height: 4rem;
+    align-items: center;
+}
+footer a{
+    flex-grow: 1;
+    text-align: center;
+    color: #aaa;
+}
+footer a:hover{
+    color: #FFAB4A;
+}

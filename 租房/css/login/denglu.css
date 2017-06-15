@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+    width: 100%;
+    background:#F69228 ;
+}
+.set{
+
+    text-align: right;
+    line-height: 2rem;
+    color: white;
+    margin-right: 0.5rem;
+}
+.people{
+    width:96%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.people>div:nth-child(1){
+    width: 4.5rem;
+    height: 4.5rem;
+    background: white;
+    background-image: url(../../img/people.png);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    background-size: 100% 100%;
+    margin-left: 0.4rem;
+
+}
+
+.people>div:nth-child(2){
+    width: 60%;
+    color: white;
+    margin-left: 1.5rem;
+}
+.people>div:nth-child(3){
+    width: 8%;
+    color: white;
+    margin-left: 2rem;
+}
+
+.dex{
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: 0.8rem;
+    z-index: 2;
+    color: white;
+    background: orangered;
+    background-color:rgba(10,10,10,0.2)
+}
+.l1{
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #666666;
+    color: white;
+    height: 2rem;
+    padding-bottom: 0.5rem;
+
+}
+.li>span{
+    color: white;
+}
+.dex>li:nth-child(4){
+    width: 25%;
+    text-align: center;
+    color: white;
+}
+.text{
+    padding: 0.5rem;
+    border-bottom: 1px solid gainsboro;
+}
+.text>img{
+    width:7.5%;
+    margin-right: 0.3rem;
+}
+.money{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.money>li{
+    width: 33%;
+    color: #666666;
+}
+.gry{
+    width: 100%;
+    background: #F6F6F6;
+    padding-top: 1rem;
+}
+.div1{
+
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    background: white;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+.div1>i{
+    width: 10%;
+    color: #E34343;
+    margin-top: 0.2rem;
+    margin-left: 0.5rem;
+}
+.div1>p:nth-child(2){
+    width: 80%;
+}
+.div1>p:nth-child(3){
+    width: 10%;
+    text-align: right;
+    margin-right: 0.5rem;
+    font-weight: bolder;
+    color: #333333;
+}
+.fangzu{
+    margin-top: 0.8rem;
+}
+.fa-jpy{
+    color: palevioletred;
+}
+.fa-file-text-o{
+    color: plum;
+}
+footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    background-color: #fff;
+}
+footer a{
+    flex-grow: 1;
+    text-align: center;
+    color: #666;
+}
+footer a:hover{
+    color: #FFAB4A;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

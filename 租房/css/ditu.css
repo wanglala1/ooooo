@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: orange;
+    color: white;
+    padding-left: .5rem;
+    position: fixed;
+    top: 0px;
+}
+.wrap1{
+    width: 20%;
+}
+.wrap2{
+    width: 60%;
+}
+.kongbai{
+    width: 100%;
+    height: 5rem;
+}
+.ditu{
+    width: 100%;
+}
+.ditu>img{
+    width: 100%;
+}
