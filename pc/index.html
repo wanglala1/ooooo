@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.1.1.js"></script>
+</head>
+<body>
+<header>
+    <img src="img/logo.gif" alt="">
+    <div class="shijian">
+        <div>2017年&nbsp;6月10日&nbsp;星期六</div>
+        <div><img src="img/telephone.gif"></div>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="html/guanyu.html">关于我们</a></li>
+            <li><a href="html/xinwen.html">新闻动态</a></li>
+            <li><a href="html/chanpin.html">产品展示</a></li>
+            <li><a href="html/jiaru.html">加入我们</a></li>
+            <li><a href="html/lianxi.html">联系我们</a></li>
+        </ul>
+    </div>
+    <script>
+        $(".nav li").click(function() {
+            $(".nav li").find("a").css("color", "#000");
+            $(this).find("a").css("color", "red")
+        })
+    </script>
+</header>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/banner1.jpg" alt="" style="width:100%;height: 300px;" ></div>
+        <div class="swiper-slide"><img src="img/banner1.jpg" alt="" style="width:100%;height: 300px;" ></div>
+        <div class="swiper-slide"><img src="img/banner1.jpg" alt="" style="width:100%;height: 300px;" ></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+<script src="js/swiper.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        loop:true,
+        pagination: '.swiper-pagination',
+        paginationClickable: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30,
+        autoplay:1000
+    });
+</script>
+<section>
+    <div class="d1">
+        <div class="jieshao">
+            <div class="js1">
+                <p>公司介绍 <span>更多>></span></p>
+            </div>
+            <div class="js">
+                <div>
+                    <img src="img/214sada.jpg" alt="">
+                </div>
+                <div>
+                    &nbsp;自今年以来，不锈钢棒材价格跌跌不休，主要是终端需求持续低迷，下游采购商“买涨不买跌”的心态影响。不锈钢型材行业的微利经营仍在持续，甚至进一步发展...
+                </div>
+            </div>
+        </div>
+        <div class="xinwen">
+            <div class="js1">
+                <p><a href="html/xinwen.html">新闻动态</a> <span>更多>></span></p>
+            </div>
+            <div class="xw">
+                   <ul id="express">
+                       <li>青山控股集团熊欢龙湾区第动会 <span>06-07</span></li>
+                       <li>青山控股集团熊欢龙湾区第动会 <span>06-07</span></li>
+                       <li>青山控股集团熊欢龙湾区第动会 <span>06-07</span></li>
+                       <li>青山控股集团熊欢龙湾区第动会 <span>06-07</span></li>
+                   </ul>
+                <script>
+                    $(function(){
+                        function movedown(){
+                            var marginTop = 0 ;
+                            var stop =false;
+                            var interval = setInterval(function(){
+                                if(stop) return;
+                                $('#express').children('li').first().animate({
+                                            'margin-top':marginTop--},
+                                        0,
+                                        function(){
+                                            var $first =$(this);
+                                            if(!$first.is(':animated')){
+                                                if((-marginTop)>$first.height()){
+                                                    $first.css({'margin-top':0}).appendTo($('#express'));
+                                                    marginTop = 0;
+                                                }
+                                            }
+                                        });
+                            },50);
+                            $('#express').mouseover(function(){
+                                stop = true;
+                            }).mouseout(function(){
+                                stop = false;
+                            });
+                        }
+                        movedown();
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="lianxi1">
+            <div class="js1">
+                <p><a href="html/lianxi.html">联系方式</a> <span>更多>></span></p>
+            </div>
+            <div class="lx">
+            <p>地 址：温州市龙湾区永中街道青山</p>
+            <p>联系人：朱某某</p>
+            <p>电 话：+86-0577-86602022</p>
+            <p>邮 箱：q541374203@qq.com</p>
+            </div>
+        </div>
+        </div>
+    <div class="d2">
+         <div class="zhanshi">
+             <div class="js1">
+                 <p><a href="html/chanpin.html">产品展示</a> <span>更多>></span></p>
+             </div>
+             <div class="zs">
+                 <div class="swiper-container">
+                     <div class="swiper-wrapper">
+                         <div class="swiper-slide">
+                             <img src="img/1243a.jpg" alt="">
+                             <p>不锈钢钢管</p>
+                         </div>
+                         <div class="swiper-slide">
+                             <img src="img/123asd.jpg" alt="">
+                             <p>不锈钢钢管</p>
+                         </div>
+                         <div class="swiper-slide">
+                             <img src="img/1234af.jpg" alt="">
+                             <p>不锈钢钢管</p>
+                         </div>
+                         <div class="swiper-slide">
+                             <img src="img/3214saf.jpg" alt="">
+                             <p>不锈钢钢管</p>
+                         </div>
+                     </div>
+                 </div>
+                 <script>
+                     var swiper = new Swiper('.zs .swiper-container', {
+                         pagination: '.swiper-pagination',
+                         slidesPerView: 4,
+                         paginationClickable: true,
+                         spaceBetween:10,
+                         freeMode: true,
+                         autoplay:1000,
+                         loop:true
+                     });
+                 </script>
+             </div>
+         </div>
+         <div class="lianjie">
+             <div class="js1">
+                 <p><a href="#">友情链接</a> <span>更多>></span></p>
+             </div>
+             <div class="lj">
+                 <span>上海鼎信</span>
+                 <span>上海鼎信</span>
+                 <span>上海鼎信</span>
+                 <span>上海鼎信</span>
+                 <span>上海鼎信</span>
+             </div>
+         </div>
+    </div>
+</section>
+<div style="clear: both"></div>
+<footer>
+    <div class="foot">
+        <span><a href="index.html">首页</a></span>
+        <span><a href="html/guanyu.html">关于我们</a></span>
+        <span><a href="html/xinwen.html">新闻动态</a></span>
+        <span><a href="html/chanpin.html">产品展示</a></span>
+        <span><a href="html/jiaru.html">加入我们</a></span>
+        <span style="border: none;"><a href="html/lianxi.html">联系我们</a></span>
+    </div>
+    <p>Copyright © 2011-2012 tssinfo.com Inc.All Rights Reserved</p>
+    <p>浙ICP备11030275号-2 增值电信业务经营许可证：浙B2-20110289</p>
+</footer>
+</body>
+</html>

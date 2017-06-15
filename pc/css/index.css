@@ -1,0 +1,146 @@
+*{
+    padding:0;
+    margin:0;
+}
+li{
+    list-style: none;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+body{
+    width:90%;
+    background-color: #eee;
+    margin:0 auto;
+}
+.shijian{
+    float: right;
+}
+.nav ul{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top,#F2F2F2,#DEDEDE);
+    line-height: 50px;
+    display: flex;
+}
+.nav ul li{
+    float: left;
+    flex-grow: 1;
+    border:1px solid #fff;
+}
+.swiper-container {
+    width: 100%;
+    height:300px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.swiper-wrapper{
+    width: 100%;
+    height:300px;
+}
+.foot{
+    width:100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: #ccc;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+.foot span{
+    border-right: 2px solid #000;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+footer p{
+    text-align: center;
+}
+footer p:nth-child(2){
+    padding:15px;
+}
+.d1{
+    display: flex;
+}
+.jieshao{
+    width:45%;
+    margin-right: 1rem;
+}
+.js1{
+    border-left: 18px solid #AD0714;
+    padding-left: 10px;
+    margin-bottom: .5rem;
+}
+.js1 span{
+    float: right;
+    color: #aaa;
+}
+.js{
+    display: flex;
+    padding-top: .5rem;
+    border-top: 3px solid #ccc;
+}
+.js div:nth-child(2){
+    padding-left: .5rem;
+    width:65%;
+}
+.xinwen{
+    width:35%;
+    margin-right: 1rem;
+}
+.xw{
+    font-size: .8rem;
+    padding-top: .5rem;
+    border-top: 3px solid #ccc;
+}
+.xw span{
+    float: right;
+    color: #aaa;
+}
+.lianxi1{
+    width:30%;
+}
+.lx{
+    padding-top: .5rem;
+    border-top: 3px solid #ccc;
+}
+.lx p{
+    padding-top: 10px ;
+}
+.d2{
+    margin-top: 20px;
+    display: flex;
+}
+.zhanshi{
+    width:72%;
+    margin-right: 1rem;
+}
+.lianjie{
+    width:30%;
+}
+.zs{
+    padding-top: .5rem;
+    border-top: 3px solid #ccc;
+}
+.zs .swiper-container{
+    width:90%;
+    height: 150px;
+}
+.zs img{
+    border: 2px solid #ccc;
+}
+.zs p{
+   padding-left: 20px;
+}
+.lj{
+    padding-top: .5rem;
+    border-top: 3px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+}
+.lj span{
+    width:50%;
+    padding-top: 20px;
+}
